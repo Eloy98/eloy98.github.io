@@ -106,7 +106,7 @@ repost:
 ### 软件下载
 > [!todo]点击下方链接进入下载页面
 
-{{< link "https://www.123684.com/s/WAltVv-I3Zwh" "Vial_win" "Vial_win" true "fa-solid fa-download" >}}
+{{< link "https://www.123684.com/s/WAltVv-1hZwh" "Vial_win" "Vial_win" true "fa-solid fa-download" >}}
 
 ### 软件操作
 > [!todo]将键盘连接到电脑，打开vial软件
