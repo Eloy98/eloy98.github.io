@@ -57,7 +57,7 @@ repost:
 {{< link "https://github.com/Eloy98/zmk-for-cocot46p" "cocot46仓库" "cocot46仓库" true "fa-solid fa-link" >}}
 
 >[!todo] 如何进行绑定仓库和常规改键，请参考下面的文档
-<A>
+
 {{< link "https://www.123684.com/s/WAltVv-uAZwh" "zmk文档" "zmk文档" true "fa-solid fa-download" >}}
 
 >[!todo] 默认键位
