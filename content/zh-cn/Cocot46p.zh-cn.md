@@ -60,6 +60,10 @@ repost:
 
 {{< link "https://www.123684.com/s/WAltVv-uAZwh" "zmk文档" "zmk文档" true "fa-solid fa-download" >}}
 
+>[!todo] 软重启，由于重置按钮在背面，zmk需要频繁刷写固件，默认为如下键位触发刷机模式，如需更改键值，请在改键网站中修改*&bootloader*的位置即可
+
+{{< image src="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png" caption="软重启">}}
+
 >[!todo] 默认键位
 
 {{< image src="/images/cocot46p.svg" caption="默认键位">}}
