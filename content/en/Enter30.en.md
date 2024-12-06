@@ -107,7 +107,7 @@ repost:
 ### Software Download
 > [!todo] Click the link below to access the download page.
 
-{{< link "https://www.123684.com/s/WAltVv-1hZwh" "Vial_win" "Vial_win" true "fa-solid fa-download" >}}
+{{< link "https://drive.google.com/drive/folders/1WWxKntgUshDlofq6pLYYpML3d8jF486k?usp=sharing" "Vial" "Vial" true "fa-solid fa-download" >}}
 
 ### Software Operation
 > [!todo] Connect the keyboard to the computer and open the Vial software.
