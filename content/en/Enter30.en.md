@@ -2,7 +2,7 @@
 title: Enter30 Build Guide
 subtitle:
 date: 2024-11-06T17:10:41+08:00
-slug: e543ce3
+slug: enter30
 draft: false
 type: posts
 author:
