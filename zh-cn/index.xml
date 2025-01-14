@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Peculiarkb</title><link>http://localhost:1313/zh-cn/</link><description>This is my new Hugo FixIt site</description><generator>Hugo 0.140.2 &amp; FixIt v0.3.15</generator><language>zh-CN</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><copyright>本站内容采用 CC BY-NC-SA 4.0 国际许可协议。</copyright><lastBuildDate>Tue, 14 Jan 2025 20:00:56 +0800</lastBuildDate><atom:link href="http://localhost:1313/zh-cn/index.xml" rel="self" type="application/rss+xml"/><item><title>Cocot46p构建指南</title><link>http://localhost:1313/zh-cn/5rer4g/</link><pubDate>Wed, 13 Nov 2024 11:29:34 +0800</pubDate><author>eloy1172240653@gmail.com (xiix)</author><guid>http://localhost:1313/zh-cn/5rer4g/</guid><category domain="http://localhost:1313/zh-cn/categories/%E6%95%99%E7%A8%8B/">教程</category><description>&lt;img src="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731469274/keyboard/Cocot46/sample2_cawd0q.jpg" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="一使用介绍" class="heading-element">&lt;span>一、使用介绍&lt;/span>
+ &lt;a href="#%e4%b8%80%e4%bd%bf%e7%94%a8%e4%bb%8b%e7%bb%8d" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h3 id="硬件" class="heading-element">&lt;span>硬件&lt;/span>
+ &lt;a href="#%e7%a1%ac%e4%bb%b6" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition tip open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-regular fa-lightbulb" aria-hidden="true">&lt;/i>Cocot46采用zmk固件，电池开关在typeC右侧，往左是关闭，往右是开启&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;div class="details admonition tip open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-regular fa-lightbulb" aria-hidden="true">&lt;/i>充电提示灯在typeC左侧，充电需打开电池开关，正在充电为常亮，充满熄灭&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;h3 id="软件" class="heading-element">&lt;span>软件&lt;/span>
+ &lt;a href="#%e8%bd%af%e4%bb%b6" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>改键之前，需要fork键盘仓库，以下是仓库链接&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;a href="https://github.com/Eloy98/zmk-for-cocot46p" title="cocot46仓库"target="_blank" rel="external nofollow noopener noreferrer" class="card-link">&lt;span class="cl-backdrop" style="--cl-bg-url: url(/images/fixit.min.svg);">&lt;/span>
+ &lt;span class="cl-content">
+ &lt;span class="cl-text">
+ &lt;span class="cl-title">cocot46仓库&lt;/span>
+ &lt;span class="cl-meta">
+ &lt;svg class="cl-icon-link" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16">&lt;path d="M574 665.4c-3.1-3.1-8.2-3.1-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8c-3.1-3.1-8.2-3.1-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zM832.6 191.4c-84.6-84.6-221.5-84.6-306 0L410.3 307.6c-3.1 3.1-3.1 8.2 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6c-3.1 3.1-3.1 8.2 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1z" fill="#a9a9b3">&lt;/path>&lt;path d="M610.1 372.3c-3.1-3.1-8.2-3.1-11.3 0L372.3 598.7c-3.1 3.1-3.1 8.2 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z" fill="#a9a9b3">&lt;/path>&lt;/svg>
+ &lt;span class="cl-url">https://github.com/Eloy98/zmk-for-cocot46p&lt;/span>
+ &lt;/span>
+ &lt;/span>&lt;i class="fa-solid fa-link cl-shortcut-icon">&lt;/i>&lt;/span>&lt;/a>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>如何进行绑定仓库和常规改键，请参考下面的文档&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;a href="https://www.123684.com/s/WAltVv-uAZwh" title="zmk文档"target="_blank" rel="external nofollow noopener noreferrer" class="card-link">&lt;span class="cl-backdrop" style="--cl-bg-url: url(/images/fixit.min.svg);">&lt;/span>
+ &lt;span class="cl-content">
+ &lt;span class="cl-text">
+ &lt;span class="cl-title">zmk文档&lt;/span>
+ &lt;span class="cl-meta">
+ &lt;svg class="cl-icon-link" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16">&lt;path d="M574 665.4c-3.1-3.1-8.2-3.1-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8c-3.1-3.1-8.2-3.1-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zM832.6 191.4c-84.6-84.6-221.5-84.6-306 0L410.3 307.6c-3.1 3.1-3.1 8.2 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6c-3.1 3.1-3.1 8.2 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1z" fill="#a9a9b3">&lt;/path>&lt;path d="M610.1 372.3c-3.1-3.1-8.2-3.1-11.3 0L372.3 598.7c-3.1 3.1-3.1 8.2 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z" fill="#a9a9b3">&lt;/path>&lt;/svg>
+ &lt;span class="cl-url">https://www.123684.com/s/WAltVv-uAZwh&lt;/span>
+ &lt;/span>
+ &lt;/span>&lt;i class="fa-solid fa-download cl-shortcut-icon">&lt;/i>&lt;/span>&lt;/a>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>软重启，由于重置按钮在背面，zmk需要频繁刷写固件，默认为如下键位触发刷机模式，如需更改键值，请在改键网站中修改*&amp;amp;bootloader*的位置即可&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png?size=small" data-sub-html="&lt;h2>软重启&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png" alt="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1731490037/keyboard/Cocot46/bl_c2bete.png" style="--width: 1283px;--aspect-ratio: 1283 / 965;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">软重启&lt;/figcaption>
+ &lt;/figure>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>默认键位&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="http://localhost:1313/images/cocot46p.svg?size=large" data-thumbnail="/images/cocot46p.svg?size=small" data-sub-html="&lt;h2>默认键位&lt;/h2>">&lt;img loading="lazy" src="http://localhost:1313/images/cocot46p.svg" alt="/images/cocot46p.svg" srcset="http://localhost:1313/images/cocot46p.svg?size=small, http://localhost:1313/images/cocot46p.svg?size=medium 1.5x, http://localhost:1313/images/cocot46p.svg?size=large 2x" data-title="/images/cocot46p.svg" class="suffix-invalid suffix-invalid__small suffix-invalid__large" style="background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">默认键位&lt;/figcaption>
+ &lt;/figure>
+&lt;h2 id="二轨迹球配置说明" class="heading-element">&lt;span>二、轨迹球配置说明&lt;/span>
+ &lt;a href="#%e4%ba%8c%e8%bd%a8%e8%bf%b9%e7%90%83%e9%85%8d%e7%bd%ae%e8%af%b4%e6%98%8e" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>默认DPI设置，默认为800，如需修改，请修改以下配置&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;div class="highlight" data-open="false">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#/config/boards/shields/cocot46p/cocot46p.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#PMW3610 的默认CPI为800, 区间：200~3200，步长200，依次为200,400,600，...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">CONFIG_PMW3610_CPI=800
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>滚轮模拟，默认开启，启动层为Lower层，如需修改触发层，请修改以下配置&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;div class="highlight" data-open="false">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#/config/boards/shields/cocot46p/cocot46p.overlay
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/*scroll_layer*/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/*default is &amp;lt;1&amp;gt;~&amp;lt;4&amp;gt;*/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">scroll-layers = &amp;lt;1&amp;gt;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>球动层动，默认关闭，开启之后，可以实现轨迹球滚动过程中，键盘自动切到特定层，如需开启，取消如下的代码注释&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;div class="highlight" data-open="false">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#/config/boards/shields/cocot46p/cocot46p.overlay
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/*default is &amp;lt;1&amp;gt;~&amp;lt;4&amp;gt;*/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/*automouse-layer = &amp;lt;2&amp;gt;;*/ =&amp;gt; automouse-layer = &amp;lt;2&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>球动层动停留时间，默认为400ms，如需修改时长，请修改以下配置&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;div class="highlight" data-open="false">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#/config/boards/shields/cocot46p/cocot46p.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#使用轨迹球后鼠标层将保持活动的毫秒数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">CONFIG_PMW3610_AUTOMOUSE_TIMEOUT_MS=400
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>狙击层设置，默认开启，可以实现触发到特定层，DPI降速，已达到更加精确的点击。启动层为Snipe层，如需修改触发层，请修改以下配置&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;div class="highlight" data-open="false">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#/config/boards/shields/cocot46p/cocot46p.overlay
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/*snipe_layer*/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/*default is &amp;lt;1&amp;gt;~&amp;lt;4&amp;gt;*/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">snipe-layers = &amp;lt;4&amp;gt;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>狙击层DPI设置，默认为200，如需修改，请修改以下配置&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;div class="highlight" data-open="false">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">#/config/boards/shields/cocot46p/cocot46p.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># 配置狙击层CPI
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">CONFIG_PMW3610_SNIPE_CPI=200
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">...&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Enter30构建指南</title><link>http://localhost:1313/zh-cn/ba41b4e/</link><pubDate>Wed, 06 Nov 2024 17:10:35 +0800</pubDate><author>eloy1172240653@gmail.com (xiix)</author><guid>http://localhost:1313/zh-cn/ba41b4e/</guid><category domain="http://localhost:1313/zh-cn/categories/%E6%95%99%E7%A8%8B/">教程</category><description>&lt;img src="https://res.cloudinary.com/dref0olos/image/upload/q_50/v1730945913/keyboard/Enter30/B2F949AFC5ECBFA0092ABC305AD23D55_lxvequ.jpg" alt="featured image" referrerpolicy="no-referrer">&lt;h2 id="一组装" class="heading-element">&lt;span>一、组装&lt;/span>
+ &lt;a href="#%e4%b8%80%e7%bb%84%e8%a3%85" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h3 id="套件包含" class="heading-element">&lt;span>套件包含&lt;/span>
+ &lt;a href="#%e5%a5%97%e4%bb%b6%e5%8c%85%e5%90%ab" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;blockquote>
+&lt;ul>
+&lt;li>外壳*1&lt;/li>
+&lt;li>pcb*1&lt;/li>
+&lt;li>夹心棉*1&lt;/li>
+&lt;li>电池*1&lt;/li>
+&lt;li>usb小板（已安装到下壳）&lt;/li>
+&lt;li>配件包&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg?size=small" data-sub-html="&lt;h2>https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.1_lcluc5.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>
+&lt;h3 id="需自备物品" class="heading-element">&lt;span>需自备物品&lt;/span>
+ &lt;a href="#%e9%9c%80%e8%87%aa%e5%a4%87%e7%89%a9%e5%93%81" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;blockquote>
+&lt;ul>
+&lt;li>剪刀&lt;/li>
+&lt;li>镊子&lt;/li>
+&lt;li>轴体若干&lt;/li>
+&lt;li>2u卫星轴*3&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.2_bubizh.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.2_bubizh.jpg?size=small" data-sub-html="&lt;h2>自备物品&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.2_bubizh.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.2_bubizh.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881529/keyboard/Enter30/step1.2_bubizh.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881529/keyboard/Enter30/step1.2_bubizh.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881529/keyboard/Enter30/step1.2_bubizh.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881529/keyboard/Enter30/step1.2_bubizh.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">自备物品&lt;/figcaption>
+ &lt;/figure>
+&lt;h3 id="下盖处理" class="heading-element">&lt;span>下盖处理&lt;/span>
+ &lt;a href="#%e4%b8%8b%e7%9b%96%e5%a4%84%e7%90%86" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>将配件包的棉条拿出，上下凸起处各贴4条，左右凸起处各1条（需自行剪开），如下图所示&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step2.2_q6q4yh.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step2.2_q6q4yh.jpg?size=small" data-sub-html="&lt;h2>下盖处理&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step2.2_q6q4yh.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step2.2_q6q4yh.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881611/keyboard/Enter30/step2.2_q6q4yh.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881611/keyboard/Enter30/step2.2_q6q4yh.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881611/keyboard/Enter30/step2.2_q6q4yh.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step2.2_q6q4yh.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">下盖处理&lt;/figcaption>
+ &lt;/figure>
+&lt;h3 id="上盖处理可选" class="heading-element">&lt;span>上盖处理（可选）&lt;/span>
+ &lt;a href="#%e4%b8%8a%e7%9b%96%e5%a4%84%e7%90%86%e5%8f%af%e9%80%89" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>上盖对应凹槽处，贴对应数量的棉条&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step2.3_shqaad.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step2.3_shqaad.jpg?size=small" data-sub-html="&lt;h2>上盖处理&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step2.3_shqaad.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step2.3_shqaad.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step2.3_shqaad.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step2.3_shqaad.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step2.3_shqaad.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step2.3_shqaad.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">上盖处理&lt;/figcaption>
+ &lt;/figure>
+&lt;h3 id="插轴" class="heading-element">&lt;span>插轴&lt;/span>
+ &lt;a href="#%e6%8f%92%e8%bd%b4" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>将定位板、夹心棉和pcb（从上至下顺序）叠放在一起，插入轴体并安装卫星轴&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.1_vkbygc.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.1_vkbygc.jpg?size=small" data-sub-html="&lt;h2>插轴&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.1_vkbygc.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.1_vkbygc.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881613/keyboard/Enter30/step3.1_vkbygc.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881613/keyboard/Enter30/step3.1_vkbygc.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881613/keyboard/Enter30/step3.1_vkbygc.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.1_vkbygc.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">插轴&lt;/figcaption>
+ &lt;/figure>
+&lt;h3 id="插线" class="heading-element">&lt;span>插线&lt;/span>
+ &lt;a href="#%e6%8f%92%e7%ba%bf" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition warning open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-exclamation-triangle" aria-hidden="true">&lt;/i>将组好内胆翻转，插好usb线和电池线，接口顺序如下图所示&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.1_fbum9x.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.1_fbum9x.jpg?size=small" data-sub-html="&lt;h2>电池接口方向&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.1_fbum9x.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.1_fbum9x.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step5.1_fbum9x.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step5.1_fbum9x.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step5.1_fbum9x.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.1_fbum9x.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">电池接口方向&lt;/figcaption>
+ &lt;/figure>
+&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.2_mgi3p6.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.2_mgi3p6.jpg?size=small" data-sub-html="&lt;h2>usb接口方向&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.2_mgi3p6.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.2_mgi3p6.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step5.2_mgi3p6.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step5.2_mgi3p6.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881610/keyboard/Enter30/step5.2_mgi3p6.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881610/keyboard/Enter30/step5.2_mgi3p6.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">usb接口方向&lt;/figcaption>
+ &lt;/figure>
+&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step3.2_lnsdsa.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step3.2_lnsdsa.jpg?size=small" data-sub-html="&lt;h2>插线&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step3.2_lnsdsa.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step3.2_lnsdsa.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881611/keyboard/Enter30/step3.2_lnsdsa.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881611/keyboard/Enter30/step3.2_lnsdsa.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881611/keyboard/Enter30/step3.2_lnsdsa.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881611/keyboard/Enter30/step3.2_lnsdsa.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">插线&lt;/figcaption>
+ &lt;/figure>
+&lt;h3 id="组装上下盖" class="heading-element">&lt;span>组装上下盖&lt;/span>
+ &lt;a href="#%e7%bb%84%e8%a3%85%e4%b8%8a%e4%b8%8b%e7%9b%96" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>插好线之后，将内胆平放在下壳上，拿出上盖，与下壳压到一起&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.3_eoyli2.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.3_eoyli2.jpg?size=small" data-sub-html="&lt;h2>组装上下盖&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.3_eoyli2.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.3_eoyli2.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881612/keyboard/Enter30/step3.3_eoyli2.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881612/keyboard/Enter30/step3.3_eoyli2.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881612/keyboard/Enter30/step3.3_eoyli2.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.3_eoyli2.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">组装上下盖&lt;/figcaption>
+ &lt;/figure>
+&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.4_ydx8ko.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.4_ydx8ko.jpg?size=small" data-sub-html="&lt;h2>组装上下盖&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.4_ydx8ko.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.4_ydx8ko.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881612/keyboard/Enter30/step3.4_ydx8ko.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881612/keyboard/Enter30/step3.4_ydx8ko.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881612/keyboard/Enter30/step3.4_ydx8ko.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881612/keyboard/Enter30/step3.4_ydx8ko.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">组装上下盖&lt;/figcaption>
+ &lt;/figure>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>取出螺丝和螺丝刀，翻转键盘，拧好螺丝&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.5_ovcern.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.5_ovcern.jpg?size=small" data-sub-html="&lt;h2>拧螺丝&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.5_ovcern.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.5_ovcern.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881613/keyboard/Enter30/step3.5_ovcern.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881613/keyboard/Enter30/step3.5_ovcern.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/c_fit%2cq_50%2cw_1200/v1730881613/keyboard/Enter30/step3.5_ovcern.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/c_fit,q_50,w_1200/v1730881613/keyboard/Enter30/step3.5_ovcern.jpg" style="--width: 1200px;--aspect-ratio: 1200 / 900;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">拧螺丝&lt;/figcaption>
+ &lt;/figure>
+&lt;h2 id="二设置蓝牙" class="heading-element">&lt;span>二、设置蓝牙&lt;/span>
+ &lt;a href="#%e4%ba%8c%e8%ae%be%e7%bd%ae%e8%93%9d%e7%89%99" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;div class="details admonition tip open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-regular fa-lightbulb" aria-hidden="true">&lt;/i>vial软件需要以下链接中的版本，其他版本会导致蓝牙相关键值乱码&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;h3 id="软件下载" class="heading-element">&lt;span>软件下载&lt;/span>
+ &lt;a href="#%e8%bd%af%e4%bb%b6%e4%b8%8b%e8%bd%bd" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>点击下方链接进入下载页面&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;a href="https://www.123684.com/s/WAltVv-1hZwh" title="Vial_win"target="_blank" rel="external nofollow noopener noreferrer" class="card-link">&lt;span class="cl-backdrop" style="--cl-bg-url: url(/images/fixit.min.svg);">&lt;/span>
+ &lt;span class="cl-content">
+ &lt;span class="cl-text">
+ &lt;span class="cl-title">Vial_win&lt;/span>
+ &lt;span class="cl-meta">
+ &lt;svg class="cl-icon-link" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16">&lt;path d="M574 665.4c-3.1-3.1-8.2-3.1-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8c-3.1-3.1-8.2-3.1-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zM832.6 191.4c-84.6-84.6-221.5-84.6-306 0L410.3 307.6c-3.1 3.1-3.1 8.2 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6c-3.1 3.1-3.1 8.2 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1z" fill="#a9a9b3">&lt;/path>&lt;path d="M610.1 372.3c-3.1-3.1-8.2-3.1-11.3 0L372.3 598.7c-3.1 3.1-3.1 8.2 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z" fill="#a9a9b3">&lt;/path>&lt;/svg>
+ &lt;span class="cl-url">https://www.123684.com/s/WAltVv-1hZwh&lt;/span>
+ &lt;/span>
+ &lt;/span>&lt;i class="fa-solid fa-download cl-shortcut-icon">&lt;/i>&lt;/span>&lt;/a>
+&lt;h3 id="软件操作" class="heading-element">&lt;span>软件操作&lt;/span>
+ &lt;a href="#%e8%bd%af%e4%bb%b6%e6%93%8d%e4%bd%9c" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>将键盘连接到电脑，打开vial软件&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.1_gsqxlu.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.1_gsqxlu.png?size=small" data-sub-html="&lt;h2>vial界面&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.1_gsqxlu.png" alt="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.1_gsqxlu.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.1_gsqxlu.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.1_gsqxlu.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.1_gsqxlu.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.1_gsqxlu.png" style="--width: 1351px;--aspect-ratio: 1351 / 854;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">vial界面&lt;/figcaption>
+ &lt;/figure>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>选择想要放置蓝牙配置的键盘层，下方选择Quantum选项卡，找到最下方的6个键值&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;blockquote>
+&lt;ul>
+&lt;li>BLE0：蓝牙通道1&lt;/li>
+&lt;li>BLE1：蓝牙通道2&lt;/li>
+&lt;li>BLE2：蓝牙通道3&lt;/li>
+&lt;li>BLE DEL；删除当前通道&lt;/li>
+&lt;li>USB MODE: 切换键盘为usb模式&lt;/li>
+&lt;li>RADIO MODE: 切换键盘为2.4G模式&lt;/li>
+&lt;/ul>
+&lt;/blockquote>&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.2_ss7unl.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.2_ss7unl.png?size=small" data-sub-html="&lt;h2>配置蓝牙按键&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.2_ss7unl.png" alt="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.2_ss7unl.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.2_ss7unl.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.2_ss7unl.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.2_ss7unl.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.2_ss7unl.png" style="--width: 1353px;--aspect-ratio: 1353 / 861;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">配置蓝牙按键&lt;/figcaption>
+ &lt;/figure>
+&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.3_q4wtsh.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.3_q4wtsh.png?size=small" data-sub-html="&lt;h2>配置蓝牙按键&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.3_q4wtsh.png" alt="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.3_q4wtsh.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.3_q4wtsh.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.3_q4wtsh.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.3_q4wtsh.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.3_q4wtsh.png" style="--width: 1351px;--aspect-ratio: 1351 / 857;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">配置蓝牙按键&lt;/figcaption>
+ &lt;/figure>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>返回第0层，设置一个切层按键，示例为切到第二层触发蓝牙&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.4_eg7vrb.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.4_eg7vrb.png?size=small" data-sub-html="&lt;h2>配置蓝牙按键&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.4_eg7vrb.png" alt="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.4_eg7vrb.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.4_eg7vrb.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.4_eg7vrb.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.4_eg7vrb.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1731054755/keyboard/Enter30/key1.4_eg7vrb.png" style="--width: 1352px;--aspect-ratio: 1352 / 859;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">配置蓝牙按键&lt;/figcaption>
+ &lt;/figure>
+&lt;h3 id="蓝牙配对" class="heading-element">&lt;span>蓝牙配对&lt;/span>
+ &lt;a href="#%e8%93%9d%e7%89%99%e9%85%8d%e5%af%b9" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>拔出键盘usb线，打开电池开关，向上为打开，向下为关闭&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1730881618/keyboard/Enter30/step4.1_yviyuh.jpg?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1730881618/keyboard/Enter30/step4.1_yviyuh.jpg?size=small" data-sub-html="&lt;h2>蓝牙开关位置&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1730881618/keyboard/Enter30/step4.1_yviyuh.jpg" alt="https://res.cloudinary.com/dref0olos/image/upload/v1730881618/keyboard/Enter30/step4.1_yviyuh.jpg" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1730881618/keyboard/Enter30/step4.1_yviyuh.jpg?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1730881618/keyboard/Enter30/step4.1_yviyuh.jpg?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1730881618/keyboard/Enter30/step4.1_yviyuh.jpg?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1730881618/keyboard/Enter30/step4.1_yviyuh.jpg" style="--width: 3552px;--aspect-ratio: 3552 / 2664;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">蓝牙开关位置&lt;/figcaption>
+ &lt;/figure>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>切层到蓝牙层，触发BLE0键值，此时键盘为蓝牙广播状态，打开电脑蓝牙，选择添加蓝牙设备&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.1_kws51d.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.1_kws51d.png?size=small" data-sub-html="&lt;h2>打开蓝牙&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.1_kws51d.png" alt="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.1_kws51d.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.1_kws51d.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.1_kws51d.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.1_kws51d.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.1_kws51d.png" style="--width: 1342px;--aspect-ratio: 1342 / 857;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">打开蓝牙&lt;/figcaption>
+ &lt;/figure>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>点击蓝牙&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.2_cj7zx8.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.2_cj7zx8.png?size=small" data-sub-html="&lt;h2>选择蓝牙&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.2_cj7zx8.png" alt="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.2_cj7zx8.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.2_cj7zx8.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.2_cj7zx8.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.2_cj7zx8.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.2_cj7zx8.png" style="--width: 1351px;--aspect-ratio: 1351 / 854;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">选择蓝牙&lt;/figcaption>
+ &lt;/figure>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>在蓝牙界面点击ENTER30_BLE_O&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.3_illkyz.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.3_illkyz.png?size=small" data-sub-html="&lt;h2>选择键盘&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.3_illkyz.png" alt="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.3_illkyz.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.3_illkyz.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.3_illkyz.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.3_illkyz.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.3_illkyz.png" style="--width: 1349px;--aspect-ratio: 1349 / 854;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">选择键盘&lt;/figcaption>
+ &lt;/figure>
+&lt;div class="details admonition todo open disabled">
+ &lt;div class="details-summary admonition-title">&lt;i class="icon fa-fw fa-solid fa-list-check" aria-hidden="true">&lt;/i>系统提示准备就绪之后，点击已完成&lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;/div>
+ &lt;/div>
+&lt;/div>&lt;figure>&lt;a class="lightgallery" href="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.4_c07wzc.png?size=large" data-thumbnail="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.4_c07wzc.png?size=small" data-sub-html="&lt;h2>完成配对&lt;/h2>">&lt;img loading="lazy" src="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.4_c07wzc.png" alt="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.4_c07wzc.png" srcset="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.4_c07wzc.png?size=small, https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.4_c07wzc.png?size=medium 1.5x, https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.4_c07wzc.png?size=large 2x" data-title="https://res.cloudinary.com/dref0olos/image/upload/v1731056134/keyboard/Enter30/bl1.4_c07wzc.png" style="--width: 1356px;--aspect-ratio: 1356 / 853;background: url(/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/>&lt;/a>&lt;figcaption class="image-caption">完成配对&lt;/figcaption>
+ &lt;/figure>
+&lt;h3 id="蓝牙说明" class="heading-element">&lt;span>蓝牙说明&lt;/span>
+ &lt;a href="#%e8%93%9d%e7%89%99%e8%af%b4%e6%98%8e" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;blockquote>
+&lt;ol>
+&lt;li>Enter30一共支持3个蓝牙通道，对应的蓝牙设备名字为：&lt;strong>ENTER30_BLE_O&lt;/strong>、&lt;strong>ENTER30_BLE_1&lt;/strong>和&lt;strong>ENTER30_BLE_2&lt;/strong>&lt;/li>
+&lt;li>Enter30从无线模式到有线模式，插线之后，需要触发&lt;strong>USB MODE&lt;/strong>键值&lt;/li>
+&lt;li>Enter30从有线模式切换到无线模式，需要触发对应的通道键值&lt;/li>
+&lt;li>如果当前通道需要绑定新设备，需要触发&lt;strong>BLE DEL&lt;/strong>键值&lt;/li>
+&lt;/ol>
+&lt;/blockquote></description></item></channel></rss>
